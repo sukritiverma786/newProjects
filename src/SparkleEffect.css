@@ -1,0 +1,33 @@
+@keyframes sparkle {
+    0% {
+      opacity: 0.8;
+      transform: scale(1) translateY(0);
+    }
+    25% {
+      opacity: 0.6;
+      transform: scale(1.5) translateY(-20px);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.75) translateY(-20px);
+    }
+    75% {
+      opacity: 0.9;
+      transform: scale(1.5) translateY(-20px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8) translateY(0);
+    }
+  }
+  
+  .sparkle{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: sparkle 2s forwards;
+    z-index: 1000;
+  }
+   
+  
